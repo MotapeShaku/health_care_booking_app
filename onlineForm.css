@@ -1,0 +1,70 @@
+*,body{
+    background-color: #D3D3D3;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+
+.online-form{
+    margin:0 0 40px 10px;
+}
+.heading{
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 4px 6px gray;
+}
+.inputN input{
+    width: 80%;
+    background: white;
+    border: none;
+    outline-color: dodgerblue;
+    padding:2px 2px 2px 10px;
+}
+
+.inputN{
+    margin-bottom: 40px;
+}
+
+select.opt{
+    background-color: white;
+    height: 30px;
+    width: 80%;
+} 
+
+input#subT,input#viebT, input#updbT, input#delbT{
+    background: dodgerblue;
+    color: white;
+    font-weight: 600;
+    border: 2px solid white;
+    margin-bottom: 40px;
+}
+input#viebT:hover{
+    background: green;
+    color: white;
+    transition: .5s;
+}
+input#updbT:hover{
+    background: orange;
+    color: white;
+    transition: .5s;
+}
+input#delbT:hover{
+    background: red;
+    color: white;
+    transition: .5s;
+}
+input#subT:hover{
+    background: white;
+    color: black;
+    transition: .5s;
+}
+textarea{
+    background: white;
+    color: black;
+}
+
+.row{
+    margin-bottom: 40px;
+}
+

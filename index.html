@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+        <meta charset="utf-8">
+        <title>Health Care</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="script.js" async></script>
+  </head>
+    
+  <body>
+       <!-------Navigation-------->
+    <nav class="navi">
+        <div class="logo"><a href="" style="color: white; text-decoration: none;">Temba Clinic</a></div>
+          <input type="checkbox" id="click">
+          <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
+          <ul class="navi">
+            <li><a href="">Home</a></li>
+            <li><a href="onlineForm.html">Booking</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Our doctors</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+    </nav>
+
+                         <!-------Slider-------->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Pictures/1605973744333.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Pictures/HT_NPHW_Blog_GettyImages-649618962%20(1).jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Pictures/1605973750860.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Pictures/Intergrated_MedicalBedsHr.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+                                  <!--------------------LATEST NEWS----------------------->
+    <div class="container-fluid section-1">
+      <div class="row">
+          <div class="col-sm-12">
+            <h4 class="latest_news">Latest News</h4>
+          </div>
+        </div>
+
+         <div class="row">
+             <div class="col-sm-6">
+                 <div class="box">
+                  <article>
+                   <p><b>Health care hospital remain open and operational for admission of patients and treatment of serious medical emergencies</b></p>
+                   <p>Contrary to the rumours on social media, our hospital is not closed and all are generally ready and able to admit COVID-19 and non-COVID-19 related patients and you can also book online for check up.</p>
+                   <a href="#" style="color:red">Read More &gt;</a>
+                  </article>
+                 </div>
+             </div>
+
+             <div class="col-sm-6">
+                 <div class="box">
+                   <img src="Pictures/iuahy2vsqpxjxaj8so1v.jpg" alt="Treatment" width="270px;" style="float:left; border-radius: 2px;" class="img-fluid">
+                     <p><b>65 MORE SOUTH AFRICANS DIE OF COVID-19, 2,080 NEW INFECTIONS CONFIRMED</b></p>
+                     <P>In the past 24-hour-cycle, 2,080 new infections have been recorded, taking the total number of confirmed cases since the start of the outbreak to more than 769,000.</P>
+                     <a href="#" style="color: red">Read more &gt;</a>
+                 </div>
+             </div>
+          </div>
+      </div>
+
+                           <!-----------------COVID-19 INFO-------------------->
+      <div class="container-fluid section-2">
+         <div class="row">
+              <div class="col-sm-6">
+              <img src="Pictures/Coronavirus-CDC-645x645.jpg" alt="Corona Virus" width="400px" height="400px" class="img-fluid">
+              </div>
+              <div class="col-sm-4" style="align-items: center">
+                  <h3><b>To prevent the spread of COVID-19:</b></h3>
+               <p>
+                    Clean your hands often. Use soap and water, or an alcohol-based hand rub.
+                    Maintain a safe distance from anyone who is coughing or sneezing.
+                    Wear a mask when physical distancing is not possible.
+                    Don’t touch your eyes, nose or mouth.
+                    Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.
+                    Stay home if you feel unwell.
+                    If you have a fever, cough and difficulty breathing, seek medical attention.
+               </p>
+              </div>
+          </div>
+      </div>
+      
+      
+                             <!----------------BOOKING SECTION----------------->
+       <div class="container-fluid section-3">
+           <div class="row">
+               <div class="col-sm-12">
+                 <h4 class="cap">No need for long queues, you can Simply book online</h4>
+               </div>
+           </div>
+          <div class="row btn-marg">
+              <div class="col-sm-3">
+                 <button class="bookbtn"><a href="onlineForm.html" style="color: white;text-decoration: none">Book Now</a></button>
+              </div>
+
+              <div class="col-sm-3">
+                  <button class="bookbtn img-fluid"><a href="booking-update.html" style="color: white; text-decoration: none;">Update<br>booking information</a></button>
+              </div>
+
+              <div class="col-sm-3">
+                   <button class="bookbtn img-fluid" onclick="popup()">View Working<br>Schedules</button>
+                   <div class="popUp" id="popUp-1">
+                      <div class="content">
+                          <div class="closeBTN" onclick="popup()">&times;</div>
+                          <h1>Working Hours</h1>
+                          <p>Monday:     8am - 4pm</p>
+                          <p>Tuesday:    8am - 4pm</p>
+                          <p>Wednesday:  8am - 4pm</p>
+                          <p>Thursday:   8am - 4pm</p>
+                          <p>Friday:     8pm - 1pm</p>
+                          <p>Saturday:   Closed</p>
+                          <p>Sunday:     Closed</p>
+                      </div>
+                   </div> 
+              </div>
+
+              <div class="col-sm-3">
+                    <button class="bookbtn" id="vW">Hospital<br>Services</button>
+              </div>
+          </div>
+      </div>
+      
+      
+                                   <!-------------------ABOUT SECTION----------------------->
+      <div class="container-fluid section-4">
+         <div class="row">
+              <div class="col-sm-8">
+                  <h2 style="font-weight: bold" ><a name="about">About Our Hospital</a></h2>
+                  <p>Our purpose is to make your life better, improving poeple's lives is our first priority</p>
+                  <p>Learn more about our vision, our mission and our values: what we are passionate about and why we believe we have a unique service to offer to everyone with whom we interact.</p>
+                  <p class="showM">Our purpose is making your life better. We are able to fulfill our purpose and work towards our vision because we are backed by four strategic pillars growth, efficiency, quality, sustainability, a sustainable business model, and a powerful mission.</p>
+                  <p class="showM">We have a passion for people,those that are the life of our business and we aim to create partnerships that last a lifetime with our employees, doctors, patients and communities. We always add the human touch.</p>
+                  <a href="#" style="color: red" class="btna">Learn more &gt;</a>
+              </div>
+
+              <div class="col-lm-4 margSpace">
+                  <div class="col-sm-4 margSpace">
+                    <img src="Pictures/life-corporate-homepage-556x362.jpg" width="350px;" height="180px;">
+                  </div>
+              </div>
+          </div>
+      </div>
+
+                                <!----------------FOOTER SECTION---------------->
+      <footer>
+     <div class="container-fluid section-5">
+      <div class="row">
+         <div class="col-sm-3">
+           <h4>Patient Information</h4>
+           <ul>
+             <li><a href="#">Patient Services</a></li>
+             <li><a href="#">Patients rights and responsibities</a></li>
+             <li><a href="#">Infection prevention</a></li>
+             <li><a href="#">FAQ's</a></li>
+             <li><a href="#">Going to the hospital or online</a></li>
+             </ul>
+          </div>
+
+          <div class="col-sm-3">
+           <h4>About</h4>
+           <ul>
+             <li><a href="#">Overview of Health Care</a></li>
+             <li><a href="#">Sustainability</a></li>
+             <li><a href="#">Out of hospital services</a></li>
+             <li><a href="#">Cinical and support functions</a></li>
+             <li><a href="#">Going to the hospital or online</a></li>
+             </ul>
+          </div>
+
+          <div class="col-sm-3">
+              <h4><a name="contact">Contact us</a></h4>
+            <ul>
+             <li>011 234 7890</li>
+             <li>healthcare@gmail.com</li>
+                <a href="https://www.facebook.com/"><img src="Pictures/fblu.png" width="20px" height="20px"></a>
+                <a href="https://za.linkedin.com/"><img src="Pictures/download%20(3).png" width="20px" height="20px"></a>
+             <img src="Pictures/download%20(2).png" width="20px" height="20px">
+             </ul>
+          </div>
+          <div class="col-lg-3 "> 
+           <div class="mapouter">
+               <div class="gmap_canvas">
+                   <iframe width="100%" height="300px;" id="gmap_canvas" src="https://maps.google.com/maps?q=hammanskraal&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="text-align: left"></iframe>
+               </div>
+           </div>
+                
+          </div>
+
+         </div>
+      </div>
+      </footer>
+
+      <a class="gotobtn" href="#"><i class="fa fa-chevron-up"></i></a>
+
+                     <!--------------------- BOOTSTRAP JAVASCRIPT & JQUERY----------------------->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script> 
+
+</body>
+</html>

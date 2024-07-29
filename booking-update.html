@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+    <title>booking status</title>
+    <link rel="stylesheet" href="onlineForm.css">
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <script src="script.js" async></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <body>
+        
+        <div class="container-fluid">
+            <!--------------HEADING--------------->
+         <div class="row">
+             <div class="col-sm-12">
+                <main class="online-form">
+                    <header class="heading">Update your booking information </header>
+                    <P>You can retrive, Update and delete your information by typing your ID number on the buttons specified below.</P>
+                </main>
+             </div>
+         </div>
+           
+           <!-------------------Name(s)--------------------->
+            <div class="row inputN">
+                <div class="col-sm-12">
+                 <form class="form1">
+                     <div class="row">
+                         <div class="col-sm-6 col-lg-3">
+                            <label><b>ID</b></label><br>
+                             <input type="text" name="id" id="id"><br>
+                         </div>
+                     </div>
+                     
+                    <div class="row">
+                        
+                        <div class="col-sm-6 col-lg-3">
+                             <input type="text" name="fName" id="fName"><br>
+                             <label>First Name</label>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3">
+                             <input type="text" name="mName" id="mName"><br>
+                             <label>Middle Name</label>
+                        </div>
+
+                        <div class="col-sm-12 col-lg-3">
+                             <input type="text" name="lName" id="lName"><br>
+                             <label>Last Name</label>
+                        </div>
+                    </div> 
+                     
+                     <!------------DOB AND GEN--------------->
+                     <div class="row">
+                        
+                        <div class="col-sm-6 col-lg-3">
+                            <label><b>Birth Date</b></label><br>
+                             <input type="date" name="dob" id="dob"><br>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3">
+                            <label><b>Gender</b></label><br>
+                             <select class="opt" name="gen" id="gen">
+                                  <option>-- Please Select --</option>
+                                  <option>Male</option>
+                                  <option>Female</option>
+                                  <option>Other</option>
+                             </select>
+                        </div>
+                    </div> 
+                     
+                     <!----------------ADDRESS----------------->
+                      <div class="row">
+                        <div class="col-sm-5">
+                            <label><b>Address</b></label><br>
+                            <input type="text" name="address" id="address">
+                        </div>
+                      </div> 
+                    
+                    <div class="row">
+                         <div class="col-sm-6 col-lg-3">
+                            <input type="text" name="cityName" id="cityName"><br>
+                            <label>City</label><br>
+                         </div>
+                        
+                         <div class="col-sm-6 col-lg-3">
+                            <input type="text" name="province" id="provice"><br>
+                            <label>Province</label><br>
+                         </div>
+                        
+                         <div class="col-sm-6 col-lg-3">
+                            <input type="text" name="postal" id="postal">
+                             <label>Postal / Zip Code</label><br>
+                        </div>
+                    </div>
+                     
+                     <!----Email& Pno--->
+                      <div class="row">
+                         <div class="col-sm-6 col-lg-3">
+                             <label><b>E-mail</b></label><br>
+                             <input type="email" name="email" class="emailV" id="email"><br>
+                        </div>
+                          
+                        <div class="col-sm-6 col-lg-3">
+                            <label><b>Phone Number</b></label>
+                            <input type="tel" name="pNo" class="cell" id="pNo">
+                        </div>
+                          
+                         <div class="col-sm-6 col-lg-3">
+                            <label><b>Booking Slot</b></label><br>
+                             <select class="opt" name="ts" id="ts">
+                                  <option>-- Please Select --</option>
+                                  <option>8:00-11:00</option>
+                                  <option>13:00-16:00</option>
+                             </select>
+                        </div>
+                          
+                    </div> 
+                     
+                     <!-----------------TextA------------------->
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <label><b>Kindly describe your symptoms</b></label>
+                        <textarea cols="50" rows="9"name="symp" id="symp"></textarea>
+                      </div>
+                    </div> 
+                     
+                      <div class="row">
+                        <div class="col-sm-2">
+                              <input type="submit" value="UPDATE" name="update" id="updbT" style="max-width: 100px;">
+                        </div>
+                          
+                        <div class="col-sm-3">
+                              <input type="submit" value="DELETE" name="update" id="delbT" style="max-width: 100px;">
+                        </div>
+                        
+                         
+                         <div class="col-sm-2">
+                              <input type="submit" value="VIEW" id="viebT" style="max-width: 100px;">
+                         </div>
+                     </div>  
+                </form>
+            </div>  
+         </div>   
+        </div>
+        
+         <!---------------------FIREBASE------------------------>
+         <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+        
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+
+        <script>
+          var firebaseConfig = {
+            apiKey: "AIzaSyD4SElZeDn4O3WyO7388rkz1-duQM7lRuM",
+            authDomain: "health-care-booking-app-47b68.firebaseapp.com",
+            databaseURL: "https://health-care-booking-app-47b68-default-rtdb.firebaseio.com",
+            projectId: "health-care-booking-app-47b68",
+            storageBucket: "health-care-booking-app-47b68.appspot.com",
+            messagingSenderId: "235957126974",
+            appId: "1:235957126974:web:6998839cf9a096fa718e6f",
+            measurementId: "G-C1WNVZD2Z7"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+        </script>
+        <script src="updateDatabase.js"></script>
+        <script src="scriptFirebase.js"></script>
+    </body>
+</html>
